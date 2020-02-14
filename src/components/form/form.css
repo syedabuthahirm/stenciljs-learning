@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  width: 300px;
+}
+
+form {
+  display: grid;
+  grid-gap: 15px;
+}

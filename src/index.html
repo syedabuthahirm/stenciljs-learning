@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script type="module" src="/build/loginform.esm.js"></script>
+  <script nomodule src="/build/loginform.js"></script>
+</head>
+<body>
+  <login-form />
+  <script>
+    var form = document.querySelector('login-form');
+    function callAPI(formVal) {
+      console.log(formVal);
+    }
+    form.addEventListener('formSubmit',callAPI);
+  </script>
+</body>
+</html>
